@@ -2,30 +2,33 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-<h1>{{ title }}</h1>
-{% if rating %}
-{% for i in range(0, 7) -%}
-  <span class="fa fa-star {% if i < rating %}checked{% endif %}"></span>
-{%- endfor %}
-{% endif %}
-<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
-{%- for tag in tags | filterTagList %}
-{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-<a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-{%- endfor %}
-
-{{ content | safe }}
-
-{%- if collections.posts %}
-{%- set nextPost = collections.posts | getNextCollectionItem(page) %}
-{%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
-{%- if nextPost or previousPost %}
-<hr>
-<ul>
-  {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% else %}
-  <li><a href="/">Home</a></li>
+<div class="movie-header">
+  <h1>{{ title }}{% if imdb %}<a href={{ imdb }} target="_blank"><i class="fa fa-imdb" aria-hidden="true"></i></a>{% endif %}</h1>
+  {% if rating %}
+  {% for i in range(0, 7) -%}
+    <span class="fa fa-star {% if i < rating %}checked{% endif %}"></span>
+  {%- endfor %}
   {% endif %}
-  {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-</ul>
-{%- endif %}
-{%- endif %}
+  {# <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time> #}
+</div>
+
+<div class="movie-review">
+  {{ content | safe }}
+</div>
+
+<div class="movie-footer">
+  {%- if collections.posts %}
+  {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+  {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+  {%- if nextPost or previousPost %}
+  <hr>
+  <div class="post-footer">
+    {%- if nextPost %}<div><i class="fa fa-arrow-left" aria-hidden="true"></i><a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></div>{% else %}
+    <div><a href="/">Home</a></div>
+    {% endif %}
+    {%- if nextPost %}<a href="/"><i class="fa fa-home" aria-hidden="true"></i></a>{% endif %}
+    {%- if previousPost %}<div><a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a><i class="fa fa-arrow-right" aria-hidden="true"></i></div>{% endif %}
+  </div>
+  {%- endif %}
+  {%- endif %}
+</div>

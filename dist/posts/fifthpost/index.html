@@ -7,8 +7,6 @@
     <meta name="description" content="This is a post on My Blog about stuff.">
 
     <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
-    <link rel="stylesheet" href="/css/prism-diff.css">
     <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Movie Reviews">
     <link rel="alternate" href="/feed/feed.json" type="application/json" title="Movie Reviews">
 
@@ -23,28 +21,32 @@
       <ul class="nav">
         <li class="nav-item"><a href="/">Home</a></li>
         <li class="nav-item"><a href="/movies/">Movies</a></li>
-        <li class="nav-item"><a href="/about/">About Me</a></li>
+        <li class="nav-item"><a href="/about/">About</a></li>
       </ul>
     </header>
 
     <main class="tmpl-post">
 
-      <h1>This is my fifth post.</h1>
+      <div class="movie-header">
+  <h1>This is my fifth post.</h1>
+  
+  <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span>
+  
+  
+</div>
 
-<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span>
-
-<time datetime="2020-05-01">01 May 2020</time>
-
-<p>Posty post post</p>
+<div class="movie-review">
+  <p>Posty post post</p>
 <h2 id="section-header" tabindex="-1">Section Header <a class="direct-link" href="#section-header" aria-hidden="true">#</a></h2>
 <p>This is a post</p>
 
-<hr>
-<ul>
-  <li><a href="/">Home</a></li>
-  <li>Previous: <a href="/posts/fourthpost/">This is my fourth post.</a></li>
-</ul>
+</div>
 
+<div class="movie-footer">
+  <hr>
+  <div class="post-footer"><div><i class="fa fa-arrow-left" aria-hidden="true"></i><a href="/posts/election/">Election</a></div><a href="/"><i class="fa fa-home" aria-hidden="true"></i></a><div><a href="/posts/fourthpost/">This is my fourth post.</a><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+  </div>
+</div>
     </main>
 
     <footer></footer>
