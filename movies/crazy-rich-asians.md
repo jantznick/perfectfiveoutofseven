@@ -6,7 +6,7 @@ description:
 date: 2022-02-14
 imdb: https://www.imdb.com/title/tt3104988/
 layout: layouts/post.njk
-tag: post
+tag: movies
 slug: crazy-rich-asians
 ---
 

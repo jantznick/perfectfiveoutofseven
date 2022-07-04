@@ -80,7 +80,7 @@ main h1 {
   justify-content: center;
 }
 main :first-child {
-  margin-top: 0;
+  margin: 0;
 }
 header {
   border-bottom: 1px dashed var(--color-gray-20);
@@ -135,6 +135,14 @@ code {
 }
 
 /* Header */
+a.home {
+  position: absolute;
+  left: 50%;
+  display: block;
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
 .home {
   padding: 0 1rem;
   float: left;
@@ -251,4 +259,17 @@ a[href].direct-link:focus:visited,
 .post-footer {
   display: flex;
   justify-content: space-between;
+}
+
+.fa-imdb {
+  font-size: 2em!important;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+  a.home{
+    display:none;
+  }
 }

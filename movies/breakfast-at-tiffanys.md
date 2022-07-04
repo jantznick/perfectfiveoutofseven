@@ -6,7 +6,7 @@ description:
 date: 2022-04-08
 imdb: https://www.imdb.com/title/tt0054698/
 layout: layouts/post.njk
-tag: post
+tag: movies
 slug: breakfast-at-tiffanys
 ---
 

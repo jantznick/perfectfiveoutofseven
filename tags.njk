@@ -7,6 +7,7 @@ pagination:
     - all
     - post
     - posts
+    - movie
     - tagList
   addAllPagesToCollections: true
 layout: layouts/home.njk
@@ -20,3 +21,9 @@ permalink: /tags/{{ tag | slugify }}/
 {% include "postslist.njk" %}
 
 <p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>
+
+<ul>
+{%- for post in collections.all -%}
+  <li><a href="{{ post }}">{{ post }}</a></li>
+{%- endfor -%}
+</ul>

@@ -6,7 +6,7 @@ description:
 date: 2022-01-02
 imdb: https://www.imdb.com/title/tt5563334/
 layout: layouts/post.njk
-tag: post
+tag: movies
 slug: good-liar
 ---
 

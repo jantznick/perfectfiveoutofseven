@@ -6,7 +6,7 @@ description:
 date: 2021-11-13
 imdb: https://www.imdb.com/title/tt0106611/
 layout: layouts/post.njk
-tag: post
+tag: movies
 slug: cool-runnings
 ---
 

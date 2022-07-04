@@ -6,7 +6,7 @@ description:
 date: 2022-11-25
 imdb: https://www.imdb.com/title/tt2584384/
 layout: layouts/post.njk
-tag: post
+tag: movies
 slug: jojo-rabbit
 ---
 

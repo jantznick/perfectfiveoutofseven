@@ -6,7 +6,7 @@ description:
 date: 2022-01-17
 imdb: https://www.imdb.com/title/tt1302006/
 layout: layouts/post.njk
-tag: post
+tag: movies
 slug: irishman
 ---
 

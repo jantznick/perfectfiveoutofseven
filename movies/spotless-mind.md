@@ -6,7 +6,7 @@ description:
 date: 2021-12-17
 imdb: https://www.imdb.com/title/tt0338013/
 layout: layouts/post.njk
-tag: post
+tag: movies
 slug: spotless-mind
 ---
 

@@ -6,7 +6,7 @@ description:
 date: 2021-12-21
 imdb: https://www.imdb.com/title/tt0110538/
 layout: layouts/post.njk
-tag: post
+tag: movies
 slug: mixed-nuts
 ---
 

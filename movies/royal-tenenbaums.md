@@ -6,7 +6,7 @@ description:
 date: 2021-12-19
 imdb: https://www.imdb.com/title/tt0265666/
 layout: layouts/post.njk
-tag: post
+tag: movies
 slug: royal-tenenbaums
 ---
 

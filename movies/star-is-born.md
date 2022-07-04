@@ -6,7 +6,7 @@ description:
 date: 2022-06-27
 imdb: https://www.imdb.com/title/tt1517451/
 layout: layouts/post.njk
-tag: post
+tag: movies
 slug: star-is-born
 ---
 

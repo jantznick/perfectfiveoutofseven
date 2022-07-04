@@ -6,7 +6,7 @@ description: Election - 1999
 date: 2021-11-01
 imdb: https://www.imdb.com/title/tt0126886/
 layout: layouts/post.njk
-tag: post
+tag: movies
 slug: election
 ---
 

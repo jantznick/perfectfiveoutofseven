@@ -6,7 +6,7 @@ description:
 date: 2022-06-07
 imdb: https://www.imdb.com/title/tt14114802/
 layout: layouts/post.njk
-tag: post
+tag: movies
 slug: outfit
 ---
 

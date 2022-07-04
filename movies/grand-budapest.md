@@ -6,7 +6,7 @@ description:
 date: 2021-12-15
 imdb: https://www.imdb.com/title/tt2278388/
 layout: layouts/post.njk
-tag: post
+tag: movies
 slug: grand-budapest
 ---
 

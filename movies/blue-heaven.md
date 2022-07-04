@@ -6,7 +6,7 @@ description:
 date: 2022-04-03
 imdb: https://www.imdb.com/title/tt0100212/
 layout: layouts/post.njk
-tag: post
+tag: movies
 slug: blue-heaven
 ---
 

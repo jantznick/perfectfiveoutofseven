@@ -6,7 +6,7 @@ description:
 date: 2021-01-27
 imdb: https://www.imdb.com/title/tt0482571/
 layout: layouts/post.njk
-tag: post
+tag: movies
 slug: prestige
 ---
 

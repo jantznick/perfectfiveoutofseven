@@ -6,7 +6,7 @@ description:
 date: 2022-01-20
 imdb: https://www.imdb.com/title/tt0105435/
 layout: layouts/post.njk
-tag: post
+tag: movies
 slug: sneakers
 ---
 

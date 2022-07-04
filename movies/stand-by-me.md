@@ -6,7 +6,7 @@ description:
 date: 2022-05-11
 imdb: https://www.imdb.com/title/tt0092005/
 layout: layouts/post.njk
-tag: post
+tag: movies
 slug: stand-by-me
 ---
 
