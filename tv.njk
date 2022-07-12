@@ -1,0 +1,13 @@
+---
+layout: layouts/home.njk
+permalink: /tv/
+eleventyNavigation:
+  key: TV
+  order: 2
+---
+
+<h1>TV Shows List</h1>
+
+<h3 style="width:100%;text-align:center">Editing In Progress, No Ratings Yet</h3>
+{% set postslist = collections.tv %}
+{% include "postslist.njk" %}
