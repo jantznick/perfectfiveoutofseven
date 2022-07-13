@@ -1,4 +1,5 @@
 const fs = require("fs");
+const _ = require("lodash");
 
 const { DateTime } = require("luxon");
 const markdownIt = require("markdown-it");
@@ -59,6 +60,45 @@ module.exports = function(eleventyConfig) {
 
     return filterTagList([...tagSet]);
   });
+
+  eleventyConfig.addCollection("filteredTvShows", function(collection) {
+    const tv = collection.getFilteredByTag("tv").map(item => item.data);
+    const shows = Array.from(new Set(tv.map(({ show }) => show)));
+    const filteredShows = {}
+    shows.map(show => {
+      filteredShows[show] = tv.filter(tv => tv.show === show);
+    })
+    return filteredShows;
+  });
+
+  eleventyConfig.addCollection("tvShowList", function(collection) {
+    const tv = collection.getFilteredByTag("tv").map(item => item.data);
+    const shows = Array.from(new Set(tv.map(({ show }) => show)));
+    return shows;
+  });
+
+  const sample = {
+    "Show 1": [
+      {
+        title: "pilot",
+        show: "show 1"
+      },
+      {
+        title: "pilot",
+        show: "show 1"
+      }
+    ],
+    "Show 2": [
+      {
+        title: "pilot",
+        show: "show 2"
+      },
+      {
+        title: "pilot",
+        show: "show 2"
+      }
+    ]
+  }
 
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({

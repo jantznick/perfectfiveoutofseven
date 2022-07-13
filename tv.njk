@@ -9,5 +9,6 @@ eleventyNavigation:
 <h1>TV Shows List</h1>
 
 <h3 style="width:100%;text-align:center">Editing In Progress, No Ratings Yet</h3>
-{% set postslist = collections.tv %}
+{% set postsList = collections.filteredTvShows %}
+{% set showList = collections.tvShowList %}
 {% include "tvlist.njk" %}

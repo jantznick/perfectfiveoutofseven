@@ -176,6 +176,9 @@ a.home {
 }
 
 /* Posts list */
+ol.postlist {
+  width: 75%;
+}
 .postlist {
   list-style: none;
   padding: 0;

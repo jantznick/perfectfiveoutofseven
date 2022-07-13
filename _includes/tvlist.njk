@@ -1,12 +1,16 @@
-<ol reversed class="postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
-{% for post in postslist | reverse %}
+{% for show in showList %}
+<h1>{{ show }}</h1>
+<ol reversed class="postlist" style="counter-reset: start-from {{ (postsList[show].length) + 1 }}">
+{% for post in postsList[show] %}
 	<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-		<a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}&nbsp({{ post.data.year }}){% else %}<code>{{ post.url }}</code>{% endif %}</a>
-		{% if post.data.rating %}
+		<a href="{{ post.show.replaceAll(" ","-").toLowerCase() + "/" + post.slug }}" class="postlist-link">{% if post.title %}{{ post.title }}&nbsp({{ post.year }}){% else %}<code>{{ post.url }}</code>{% endif %}</a>
+		{% if post.rating %}
 			{% for i in range(0, 7) -%}
-				<span class="fa fa-star {% if i < post.data.rating %}checked{% endif %}"></span>
+				<span class="fa fa-star {% if i < post.rating %}checked{% endif %}"></span>
 			{%- endfor %}
 		{% endif %}
 	</li>
 {% endfor %}
 </ol>
+{% endfor %}
+
